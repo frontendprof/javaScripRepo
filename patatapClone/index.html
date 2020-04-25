@@ -11,17 +11,19 @@
 
     <!-- canvas -->
     <script type="text/paperscript" canvas="myCanvas">
-        var path = new Path();
-        path.strokeColor = 'yellow';
-        var start = new Point(10, 30);
-        path.moveTo(start);
-        path.lineTo(start + [ 500, 0]);
+        
 
-        var myCircle = new Path.Circle(new Point(110, 80), 50);
-        myCircle.fillColor = 'blue';
+        for(var x=0; x<1000; x+=100){
 
-        var circle2=new Path.Circle(new Point(50,50),200);
-        circle2.fillColor='violet'
+            for(var y=0; y<1000; y+=100){
+
+                new Path.Circle(new Point(x,y), 15).fillColor='yellow';
+            }
+            
+
+        }
+
+        
     </script>
     <title>Music shape</title>
 </head>
