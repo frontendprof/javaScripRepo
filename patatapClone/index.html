@@ -6,16 +6,22 @@
     <!-- paper js -->
     <script src="paper-full.js"></script>
 
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+
     <!-- canvas -->
     <script type="text/paperscript" canvas="myCanvas">
         var path = new Path();
-        path.strokeColor = 'red';
-        var start = new Point(10, 100);
+        path.strokeColor = 'yellow';
+        var start = new Point(10, 30);
         path.moveTo(start);
-        path.lineTo(start + [ 500, 125]);
+        path.lineTo(start + [ 500, 0]);
 
-        var myCircle = new Path.Circle(new Point(120, 120), 50);
+        var myCircle = new Path.Circle(new Point(110, 80), 50);
         myCircle.fillColor = 'blue';
+
+        var circle2=new Path.Circle(new Point(50,50),200);
+        circle2.fillColor='violet'
     </script>
     <title>Music shape</title>
 </head>
